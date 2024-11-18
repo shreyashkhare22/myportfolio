@@ -159,3 +159,44 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #222;
+  color: #f9f9f9;
+}
+
+body.dark-mode a {
+  color: #1dbf73;
+}
+
+/* Fade-In Animations */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.hidden.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.75rem 1.25rem;
+  background: #1dbf73;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #159a5c;
+}
