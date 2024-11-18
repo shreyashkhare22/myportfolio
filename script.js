@@ -1,14 +1,15 @@
-// Responsive Navigation
-const toggleMenu = document.getElementById('toggle-menu');
-const navLinks = document.getElementById('nav-links');
+// Menu toggle for mobile view
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.querySelector('.nav-links');
 
-toggleMenu.addEventListener('click', () => {
+menuIcon.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-// Contact Form Submission
-document.getElementById('contact-form').addEventListener('submit', (e) => {
+// Form submission
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  alert("Thank you for reaching out! We'll get back to you soon.");
-  e.target.reset();
+  alert('Thank you for your message! I will get back to you soon.');
+  form.reset();
 });
