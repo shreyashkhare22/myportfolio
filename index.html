@@ -3,92 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
+  <title>Your Name - Professional Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Header -->
   <header id="header">
     <nav>
-      <h1 class="logo">Your Name</h1>
-      <ul id="nav-links">
+      <h1 class="logo">YourName</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="toggle-menu" aria-label="Toggle Menu">&#9776;</button>
+      <div class="menu-icon" id="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section id="hero">
-      <div class="hero-content">
-        <h2>Hello, I'm <span>Your Name</span></h2>
-        <p>I build impactful and visually stunning digital experiences.</p>
-        <a href="#projects" class="btn">Explore My Work</a>
-      </div>
-      <img src="hero-image.jpg" alt="Hero Image" class="hero-image">
-    </section>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-text">
+      <h2>Hi, I'm <span>Your Name</span></h2>
+      <p>Creating stunning and functional designs that solve real-world problems.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-image">
+      <img src="hero.jpg" alt="Hero Image">
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <img src="about.jpg" alt="About Image">
       <p>
-        I'm a [Your Profession] with expertise in creating elegant, user-friendly designs and efficient solutions. I have a passion for learning and staying updated with the latest trends in technology and design.
+        I'm a passionate [Your Profession], blending creativity and logic to deliver outstanding user experiences. From web development to product design, my expertise spans across multiple fields.
       </p>
-      <img src="about-image.jpg" alt="About Image" class="about-image">
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>A responsive web application built with React.js.</p>
-          <a href="#" target="_blank">View Project</a>
-        </div>
-        <div class="project-card">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>A mobile app developed using Flutter.</p>
-          <a href="#" target="_blank">View Project</a>
-        </div>
-        <div class="project-card">
-          <img src="project3.jpg" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>An AI-driven platform for automating tasks.</p>
-          <a href="#" target="_blank">View Project</a>
-        </div>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+      <div class="project-item">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Dynamic web app using React and Node.js.</p>
+        <a href="#" class="project-link" target="_blank">View Project</a>
       </div>
-    </section>
+      <div class="project-item">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Interactive mobile app for seamless workflows.</p>
+        <a href="#" class="project-link" target="_blank">View Project</a>
+      </div>
+      <div class="project-item">
+        <img src="project3.jpg" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>AI-powered chatbot for efficient communication.</p>
+        <a href="#" class="project-link" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send</button>
-      </form>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="contact-intro">Have a project in mind? Let’s connect and make it happen!</p>
+    <form id="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Your Name. Crafted with care and creativity.</p>
+    <p>&copy; 2024 Your Name. Designed with ❤️ and innovation.</p>
   </footer>
 </body>
 </html>
