@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header id="header">
+    <nav>
+      <h1>Your Name</h1>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="toggle-menu" aria-label="Toggle Menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Hi, I'm <span>Your Name</span></h2>
+      <p>A <strong>[Your Profession]</strong> passionate about creating impactful solutions.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm a dedicated professional specializing in [your expertise]. I thrive on solving problems and delivering high-quality results.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>A web application for XYZ.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>A mobile app for ABC.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>An AI-powered solution for DEF.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Your Name. Built with passion.</p>
+  </footer>
+</body>
+</html>
